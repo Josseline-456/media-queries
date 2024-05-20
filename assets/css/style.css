@@ -1,0 +1,208 @@
+* {
+    margin: 0px;
+    padding: opx;
+    
+
+    
+}
+
+
+.mainGrid {
+    display: grid;
+    grid-template-areas: 
+    "menu nav"
+    "menu section"
+    "footer section"
+    
+    ;
+    grid-template-columns: 1fr 8fr;
+    height: 620px;
+    width: 100vw;
+  
+
+
+}
+
+nav {
+    grid-area: nav;
+    background-color: rgb(210, 205, 205);
+    height: 20vh;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    ;
+    
+}
+
+menu {
+    grid-area: menu;
+    background-color:rgb(9, 9, 109);
+    color:white;
+    height: 150vh;
+    margin: 0;
+    
+}
+.fa-solid{
+    margin: 10px;
+    padding: 10px;
+}
+
+button{
+    color: white;
+    background-color:rgb(14, 14, 133);
+    justify-content: center;
+    align-content: center; 
+    width: 120px;
+    height: 50px;
+    padding: 0px;
+    margin: 5px;
+    justify-content: center;
+    align-items: center;
+    
+
+
+}
+
+
+
+.container{
+    margin: 5px;
+    padding: 5px;
+}
+
+
+
+.mb-3{
+    width: 90%;
+    margin: 5px;
+    padding:5px ;
+}
+
+.fa-solid {
+     margin: 4px;
+     padding: 4px;
+}
+
+
+.footer{
+   
+        grid-area: footer;
+        background-color: rgb(4, 4, 67);
+        color:white;
+        height:100px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        
+}
+.iconos{
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa-brands{
+    margin: 5px;
+}
+
+article img{
+    width: 100%;
+    height: 60%;
+
+}
+
+.grid-container{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 16px
+
+
+}
+
+@media screen and (max-width:992px) {
+
+    body{
+    
+        grid-template-areas:
+        "menu nav"
+        "menu section"
+        "footer section";
+    }
+    
+    .grid-container{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    menu {
+        grid-area: menu;
+        background-color:rgb(9, 9, 109);
+        color:white;
+        height: 176vh;
+        margin: 0;
+        
+    }
+
+    
+    button{
+        color: white;
+        background-color:rgb(14, 14, 133);
+        justify-content: center;
+        align-content: center; 
+        width: 50%;
+        height: 30px;
+        padding: 0px;
+        margin: 0px;
+        justify-content: center;
+        align-items: center;
+        font-size: small;
+     
+    
+    
+    }
+    
+}
+
+@media screen and (max-width: 576px) {
+    .mainGrid {
+        display: grid;
+        grid-template-areas: 
+        "menu"
+        "nav section"
+        "footer ";
+        ;
+        grid-template-columns: 1fr 8fr;
+        height: 620px;
+        width: 100vw;
+      
+    
+    
+    }      
+        
+    
+    
+.grid-container{
+    grid-template-columns: 1fr;
+}
+
+menu {
+    grid-area: menu;
+    background-color:rgb(9, 9, 109);
+    color:white;
+    height: 310vh;
+    margin: 0;
+    
+}
+
+
+    
+}
+
+
+
+
